@@ -1,0 +1,6 @@
+<nav>
+    {{ range .Site.Menus.main }}
+        {{ $text := .Name | safeHTML }}
+        <a href="{{ .URL }}">{{ $text }}</a>
+    {{ end }}
+</nav>

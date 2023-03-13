@@ -1,0 +1,27 @@
+baseURL = 'http://example.org/'
+languageCode = 'de-de'
+title = 'My New Homepage!'
+
+[permalinks]
+  blog = "/:filename/"
+
+[taxonomies]
+  tag = "tags"
+
+[menu]
+  [[menu.main]]
+    name = "~/"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 2
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 3
+
+[params]
+  dateFormat = "Jan 2, 2006"
+  headerText = "Notizen und Betriebsgeheimnisse"

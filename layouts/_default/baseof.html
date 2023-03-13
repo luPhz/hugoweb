@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="de">
+{{ partial "head.html" . }}
+<body>
+    <header>
+        <h1>{{ .Title}}</h1>
+        {{ .Site.Params.headerText | markdownify }}
+    </header>
+
+    {{ partial "nav.html" . }}
+    
+    <main id="main">
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer>
+        Footer
+    </footer>
+    
+    {{ partial "scripts.html" . }}
+</body>
+</html>

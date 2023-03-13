@@ -1,0 +1,11 @@
+{{ define "main" }}
+
+<h3>Letzte Einträge</h3>
+
+{{ range first 3 .Site.RegularPages }}
+
+    {{ partial "list-summary.html" . }}
+
+{{ end }}
+
+{{ end}}

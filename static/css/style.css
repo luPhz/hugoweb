@@ -1,0 +1,34 @@
+
+body {
+    font-family: sans-serif;
+    margin: 0px;
+}
+
+header {
+    min-height: 10vh;
+    background: linear-gradient(#666, #234);
+    padding: 0.5em;
+    color: #ddd;
+}
+
+nav {
+    padding: 0.5em;
+    background: linear-gradient(#234, #012);
+}
+nav a {
+    margin: 1em 0.5em;
+    color: #eee;
+}
+
+main {
+    padding: 1em;
+    min-height: 80vh;
+}
+
+footer {
+    min-height: 10vh;
+    padding: 0.5em;
+    background: linear-gradient(#666, #012);
+    color: #ddd;
+}
+
